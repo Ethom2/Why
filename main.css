@@ -1,0 +1,152 @@
+body {
+  padding-top: 50px;
+  background-color:#fdf5e6;
+  color:#363333;
+}
+
+a{
+    color:#8e3a59;
+}
+
+img{
+    height:200px;
+    width:200px;
+}
+
+
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+.sidebar:hover{
+    background-color:#bc987e;
+}
+@media (min-width: 992px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #fdd5b1;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px;
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #a67b5b;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 500px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+.white{
+    background-color:white;
+}
+
+
+.discrete{
+    color:#363333;
+}
+
+.discrete:hover{
+    color:black;
+}
+
+.special{
+    height:400px;
+    width:450px;
+}
+.form-control{
+    background-color:#f5deb3;
+}
+
+
+.carousel {
+  height: 800px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 800px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 800px;
+}
+
+
+#basic-addon1{
+    background-color:#e6be80;
+}
+#basic-addon2{
+    background-color:#e6be8a;
+}
+#basic-addon3{
+    background-color:#e6be8d;
+}
