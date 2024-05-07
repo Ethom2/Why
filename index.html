@@ -64,7 +64,7 @@
         <div class="container-fluid">
             <div class="col-sm-4 col-sm-offset-1 col-md-5 col-md-offset-3 main">
                 <h1>Why?</h1>
-                <p>Hello there! You have stumbled upon my website.</p>
+                <p>Hello there <span id="welcome"></span>! You have stumbled upon my website.</p>
                 <p>All the code here has been written/modified by me. I do have to thank <a href="https://www.bing.com/ck/a?!&&p=fe7eddfeda7bfdbeJmltdHM9MTcxMjc5MzYwMCZpZ3VpZD0zZDExMjk2NS0yNThiLTZmZTItMDg2Mi0zZDc1MjRlNDZlZjgmaW5zaWQ9NTQ2OA&ptn=3&ver=2&hsh=3&fclid=3d112965-258b-6fe2-0862-3d7524e46ef8&psq=how+to+make+color+generator+html&u=a1aHR0cHM6Ly93d3cuZ2Vla3Nmb3JnZWVrcy5vcmcvaG93LXRvLWNyZWF0ZS1hLWNvbG9yLWdlbmVyYXRvci11c2luZy1odG1sLWNzcy1hbmQtamF2YXNjcmlwdC8&ntb=1">GeeksforGeeks</a> for the base of the color picker code. The Game fetured here was created by me <i>exclusively</i> back in 2022. Same goes for the rest of the color sections. The videos featured here belong to their respective creators. <i>I am not nor do I claim to be the origional owner of the videos or images.</i> This was made as a coding assignment for a class. Please enjoy me being incredibly bored and in need of things to do. </p>
                 <h3><a class ="discrete" href="haha.html">Why?</a></h3>
                 <p>There is truely no answer to that. I just chose that name because I found it entertaining that a website that does nothing, with no theme, would be called "Why?".</p>
@@ -138,5 +138,18 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+        <script>
+            if(localStorage.getItem("user"))
+            {
+                //if true, welcome the user back to the site
+                $("#welcome").text(localStorage.user);
+            }
+            else
+            {
+                var name = prompt("What is your name?");
+                localStorage.setItem("user", name);
+                $("#welcome").text(name);
+            }
+        </script>
     </body>
 </html>
